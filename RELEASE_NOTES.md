@@ -114,13 +114,13 @@ ssl_version :TLSv1_2
 ##### Compatibility Notes
 
 * The fixes to the ACL apis which 12.9.0 referenced being fixed in 12.9.1 have been
-  delayed to 12.9.2 in order to release this security update:
+  delayed to 12.10 in order to release this security update:
 
   > ACLs: updating ACLs of a specific user (`/users/USER/_acl`) will not
   > succeed.  This undocumented API is very rarely used and is not supported by
   > tooling provided by Chef Software.
 
-  > If you make internal use of PUTs to this endpoint, please wait until 12.9.2
+  > If you make internal use of PUTs to this endpoint, please wait until 12.10
   > to upgrade.  This will fix both the newly introduced issue, as well as an
   > older issue that prevented the endpoint from working in many other cases in
   > 12.8 and prior.
